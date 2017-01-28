@@ -15,6 +15,7 @@ public class ArticoloAction extends ActionSupport{
 	private Long idArticolo;
 	private String descArticolo;
 	private String prezzoArticolo;
+	//simulazione di bean per strato persistenza
 	private ArticoloDaoIF beanArticolo=new ArticoloDao();	
 	private CategoriaDaoIF beanCategoria=new CategoriaDao();
 	
