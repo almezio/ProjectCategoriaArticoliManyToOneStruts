@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+  <package name="default" extends="tiles-default" namespace="/CategoriaArticoli">		
+		  <result-types>
+	    	<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>
+			</result-types> 		
+						
+			<action name="*Tiles" method="{1}" class="tiles.TilesAction" >		
+				<result name="template" type="tiles">template</result>
+				<result name="index" type="tiles">index</result>
+				<result name="main_categoria" type="tiles">main_categoria</result>
+				<result name="main_ricercaArtFromCategoria" type="tiles">main_ricercaArtFromCategoria</result>
+				<result name="main_categoriaUpdate" type="tiles">main_categoriaUpdate</result>
+				<result name="main_articolo" type="tiles">main_articolo</result>
+				<result name="main_ricercaArticolo" type="tiles">main_ricercaArticolo</result>
+			</action>
+			
+			<action name="CategoriaAction" class="controller.CategoriaAction">
+				<result name="message" type="tiles">message</result>
+			</action>
+			
+			<action name="createCategoria" class="controller.CategoriaAction" method="createCategoria">				
+				<result name="message" type="tiles">message</result>
+			</action>	
+			
+			<action name="deleteCategoria" class="controller.CategoriaAction" method="deleteCategoria">
+				<result name="message" type="tiles">message</result>
+			</action>
+			
+			<action name="updateCategoria" class="controller.CategoriaAction" method="updateCategoria">
+				<result name="message" type="tiles">message</result>
+			</action>
+			
+			<action name="creaCatConArt" class="controller.CategoriaAction" method="creaCatConArt">
+				<result name="message" type="tiles">message</result>
+			</action>
+			
+			<action name="createArticolo" class="controller.ArticoloAction" method="createArticolo">
+				<result name="message" type="tiles">message</result>
+			</action>
+			
+			<action name="deleteArticolo" class="controller.ArticoloAction" method="deleteArticolo">
+				<result name="message" type="tiles">message</result>
+			</action>
+			
+			<action name="getArticoliFromCategoria" class="controller.CategoriaAction" method="getArticoliFromCategoria">
+				<result name="message" type="tiles">message</result>
+				<result name="show_articoli" type="tiles">show_articoli</result>
+			</action>
+			
+			<action name="getAllCategorie" class="controller.CategoriaAction" method="getAllCategorie">
+				<result name="message"  type="tiles">message</result>
+				<result name="show_categorie" type="tiles">show_categorie</result>
+			</action>		
+		
+			<action name="main" class="controller.CategoriaAction" method="main">
+				<result name="main_categoria" type="tiles">message</result>
+				<result name="main_articolo" type="tiles">show</result>
+				<result name="main_ricercaArticolo" type="tiles">show</result>
+			</action>		
+			
+	</package> 
+
+</struts>

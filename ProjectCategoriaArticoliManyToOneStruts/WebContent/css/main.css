@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+	.styleMain h1 {
+									 font-family: Arial, Helvetica, sans-serif, bold;
+  								 font-size: 120%;
+  								 color: #FFFFFF;  						
+  			  				}
+	
+	.styleMain p {
+  								font-family: Arial, Helvetica, sans-serif, bold;
+  								font-size: 80%;
+  								color: #FFFFFF;  						
+  				  		 }
+  				  		 
+  .styleMain table {
+  										cellpadding: 2;
+  										cellspacing: 2;  											
+  									 }	
+  									 		  		 
+  .styleMain td {
+  									padding-top: 12px;
+    								padding-bottom: 12px;
+    								text-align: left;
+    								color: white;
+    								padding: 8px;
+    								font-family: Arial, Helvetica, sans-serif, bold;
+    								/* border: 1px solid black; */
+  								} 	
+  	
+  	.styleMain s:textfield{
+  													font-family: Arial, Helvetica, sans-serif, bold;
+  												}
+  
